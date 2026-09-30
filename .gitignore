@@ -7,3 +7,5 @@ node_modules/
 # Shopify CLI
 .shopify/
 node_modules/.cache/
+# Secrets
+.env
