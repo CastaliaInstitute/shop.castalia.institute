@@ -1,0 +1,884 @@
+{
+  "version": 1,
+  "generatedFrom": "e98276d (atelier HEAD; clean unless noted)",
+  "products": [
+    {
+      "id": "ark",
+      "title": "Ark",
+      "description": "A protected local library: knowledge, compute, power, configuration and restart materials that stay useful when the internet, the grid or ordinary infrastructure is not. Four tiers — Library, Librarian, Archivist, Athenaeum — in a mini case, a .30-cal, a .50-cal and a 20-cal, with an external Meshtastic communications sled.",
+      "priceDetail": "Library $299 · Librarian $529 · Archivist $999 · Athenaeum $1,999. Communications sled sold separately",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Draft product architecture",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://ark.castalia.institute/",
+      "offer": {
+        "price": 299,
+        "currency": "USD",
+        "pricingNote": "$299–1,999",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Library",
+          "price": 299
+        },
+        {
+          "title": "Librarian",
+          "price": 529
+        },
+        {
+          "title": "Archivist",
+          "price": 999
+        },
+        {
+          "title": "Athenaeum",
+          "price": 1999
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "astrolabe",
+      "title": "Astrolabe",
+      "description": "A tactile, glanceable instrument for inquiry. The first production beta is forming now.",
+      "priceDetail": "The 1.75C round instrument. Beta reservation $49, refundable or credited in full · members $153",
+      "category": "devices",
+      "maturity": "Sapling",
+      "status": "beta",
+      "availability": "Beta hardware available now",
+      "offerKind": "hardware",
+      "checkoutProductId": "astrolabe_beta",
+      "facultySponsor": null,
+      "pageUrl": "https://astrolabe.castalia.institute/",
+      "offer": {
+        "price": 219,
+        "currency": "USD",
+        "pricingNote": "$219",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Instrument",
+          "price": 219
+        },
+        {
+          "title": "Beta reservation",
+          "price": 49
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:sapling",
+        "available-now"
+      ]
+    },
+    {
+      "id": "xdj",
+      "title": "XDJ",
+      "description": "A toddler-friendly interface for learning music and sound on the Pioneer XDJ-RX2: rhythm, cause and effect, and tactile play, without exposing a professional DJ workflow. A deck a small child can be handed.",
+      "priceDetail": "The way in to the RX2 is not cracked yet, so there is nothing to price. Pricing waits on whether the bridge speaks USB or the network — the two need different hardware.",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Research — the RX2 integration is unsolved",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/#project-xdj",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Not for sale",
+        "notForSale": true
+      },
+      "variants": [
+        {
+          "title": "XDJ",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling",
+        "not-for-sale"
+      ]
+    },
+    {
+      "id": "halo",
+      "title": "Halo",
+      "description": "An Astrolabe ring on the Colmi R09: a quiet interface for observing body-temperature patterns, checking in with yourself, and offering consent-led support to a partner. It pairs with LunaSay.",
+      "priceDetail": "Pairs with LunaSay. A reflective wellness instrument, not a medical device — temperature observations are not diagnoses. Partner sharing is opt-in, revocable, and always secondary to the wearer’s own judgment · members $125",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Concept, developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://halo.castalia.institute/",
+      "offer": {
+        "price": 179,
+        "currency": "USD",
+        "pricingNote": "$179",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Halo",
+          "price": 179
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "lunasay",
+      "title": "LunaSay",
+      "description": "A pocket astrolabe for the people you love, in two sizes: the 1.85B pocket instrument and a four-inch version. It pairs with the Halo ring, so what it tells you about the people you care for can be met with what your own body is doing.",
+      "priceDetail": "Pocket 1.85B $229, four-inch $329 · members from $160 · pairs with the Halo ring",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://lunasay.castalia.institute/",
+      "offer": {
+        "price": 229,
+        "currency": "USD",
+        "pricingNote": "$229–329",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Pocket 1.85B",
+          "price": 229
+        },
+        {
+          "title": "Four-inch",
+          "price": 329
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "fortunai",
+      "title": "Fortun.ai",
+      "description": "Ask what wants to be known. A small instrument for fortune telling, reflection, and the question you are carrying — an Astrolabe that answers obliquely, and on purpose.",
+      "priceDetail": "The 1.75C instrument with the Fortun.ai face · members $153",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://fortun.ai/",
+      "offer": {
+        "price": 219,
+        "currency": "USD",
+        "pricingNote": "$219",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Fortun.ai",
+          "price": 219
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "maria",
+      "title": "MARIA",
+      "description": "MARIA is the figurine. Astrolabe is the device. Together they make a companion for attention, learning, and creation.",
+      "priceDetail": "Beta $39 · members $104",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://maria.castalia.institute/",
+      "offer": {
+        "price": 149,
+        "currency": "USD",
+        "pricingNote": "$149",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "MARIA",
+          "price": 149
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "mynah",
+      "title": "Mynah",
+      "description": "A private, ambient, voice-first companion for the home and pocket. Early units are being tested with a small circle.",
+      "priceDetail": "Sourced and provisioned: rooted, de-Googled, locked down and tested · members $314 · software alone, for a device you already own, $59",
+      "category": "devices",
+      "maturity": "Sapling",
+      "status": "beta",
+      "availability": "XS11 hardware available now",
+      "offerKind": "hardware",
+      "checkoutProductId": "mynah_beta",
+      "facultySponsor": null,
+      "pageUrl": "https://mynah.castalia.institute/",
+      "offer": {
+        "price": 449,
+        "currency": "USD",
+        "pricingNote": "$449",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Provisioned device",
+          "price": 449
+        },
+        {
+          "title": "Software alone",
+          "price": 59
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:sapling",
+        "available-now"
+      ]
+    },
+    {
+      "id": "hitchhikers-guide",
+      "title": "Hitchhiker's Guide to the Apocalypse",
+      "description": "A physical book containing a LilyGo T-Deck — a book you can type into. Over LoRaWAN it reaches AI and the encyclopedia when there is no network left to reach them by.",
+      "priceDetail": "T-Deck bound into the book, LoRa antenna fitted · beta $59 · members $244",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/hitchhikers-guide/",
+      "offer": {
+        "price": 349,
+        "currency": "USD",
+        "pricingNote": "$349",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Hitchhiker's Guide to the Apocalypse",
+          "price": 349
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "mynah-vision",
+      "title": "MynahVision",
+      "description": "Mynah given eyes: a pan-and-tilt camera platform that can look where you point it and keep watch on what matters.",
+      "priceDetail": "Provisioned and ready to place · members $83 · software alone $39",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/#project-mynah-vision",
+      "offer": {
+        "price": 119,
+        "currency": "USD",
+        "pricingNote": "$119",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "MynahVision",
+          "price": 119
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "atlas",
+      "title": "Atlas",
+      "description": "A field book with a landscape platform bound into it, open at a circular viewport. A living map of Castalia work, people and places, and the ground for temporal geography activities and adventures.",
+      "priceDetail": "An appliance, not an app: it arrives bound, provisioned and locked down, ready to hand to a child · members $419",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://atlas.castalia.institute/",
+      "offer": {
+        "price": 599,
+        "currency": "USD",
+        "pricingNote": "$599",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Atlas",
+          "price": 599
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "astrolabe-firmware",
+      "title": "Astrolabe firmware",
+      "description": "Native firmware for the Castalia Institute Astrolabe device family: a tactile, glanceable instrument for inquiry.",
+      "priceDetail": "Open firmware for the Astrolabe family",
+      "category": "devices",
+      "maturity": "In bloom",
+      "availability": "Firmware for beta hardware",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://astrolabe.castalia.institute/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Astrolabe firmware",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:in-bloom",
+        "free"
+      ]
+    },
+    {
+      "id": "openscad-playground",
+      "title": "OpenSCAD Playground",
+      "description": "An in-browser OpenSCAD editor + preview with a conversation window that can propose and apply edits to the underlying model.",
+      "priceDetail": "Open in the browser, nothing to install",
+      "category": "tools",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/openscad/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "OpenSCAD Playground",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:tools",
+        "free"
+      ]
+    },
+    {
+      "id": "encyclopaedia",
+      "title": "The Encyclopædia",
+      "description": "A seasonal, multi-volume Encyclopædia demonstrating and inspiring inquiry: canonical public-domain authorship carried in the authentic voices of Faculty, with marginalia showing the scholarly conversation around it. Twelve volumes to the annual set, one a month, revised each Candlemas.",
+      "priceDetail": "The annual twelve for $319 · at cost: print and shipping only, no markup",
+      "category": "studio",
+      "maturity": "Sapling",
+      "status": "development",
+      "availability": "Hardbound volumes at cost",
+      "offerKind": "print",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://encyclopedia.castalia.institute/",
+      "offer": {
+        "price": 29,
+        "currency": "USD",
+        "pricingNote": "$29 a volume",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "The Encyclopædia",
+          "price": 29
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:sapling"
+      ]
+    },
+    {
+      "id": "encyclopaedia-kids",
+      "title": "The Encyclopædia — Children’s Edition",
+      "description": "The same topics and the same authors as the full edition, rewritten for reading comprehension without simplifying the idea.",
+      "priceDetail": "The annual twelve for $289 · at cost, as the full edition",
+      "category": "studio",
+      "maturity": "Sapling",
+      "status": "development",
+      "availability": "Hardbound volumes at cost",
+      "offerKind": "print",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://encyclopedia.castalia.institute/",
+      "offer": {
+        "price": 26,
+        "currency": "USD",
+        "pricingNote": "$26 a volume",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "The Encyclopædia — Children’s Edition",
+          "price": 26
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:sapling"
+      ]
+    },
+    {
+      "id": "fengshui",
+      "title": "Feng Shui",
+      "description": "Have you walked into a room and felt wrong in it, without knowing why? People have studied that for thousands of years. This is an instrument for measuring what a room is doing to you. It is research, and it is not for sale.",
+      "priceDetail": "A research instrument, non-commercial and pre-product by its own specification. Back the research if you want it to exist.",
+      "category": "tools",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://castaliainstitute.github.io/atelier-fengshui/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Not for sale",
+        "notForSale": true
+      },
+      "variants": [
+        {
+          "title": "Feng Shui",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:tools",
+        "not-for-sale"
+      ]
+    },
+    {
+      "id": "garage",
+      "title": "The Garage",
+      "description": "The physical workshop build: a 12 x 20 layout, its zones, ventilation logic, blueprint packages and phased construction.",
+      "priceDetail": "Plans, cut lists, zoning and ventilation · $149 with the phased build guide",
+      "category": "studio",
+      "maturity": "Sapling",
+      "status": "development",
+      "availability": "Building in public",
+      "offerKind": "work",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://garage.castalia.institute/",
+      "offer": {
+        "price": 79,
+        "currency": "USD",
+        "pricingNote": "$79",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "The Garage",
+          "price": 79
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:sapling"
+      ]
+    },
+    {
+      "id": "garage-schooling",
+      "title": "iNQshop / Garage Schooling",
+      "description": "Curriculum strands from PreK upward, including engines and propulsion, notebooks, outputs and a growth pathway — taught in the bay.",
+      "priceDetail": "Or $290 the year, per family · included at Institute membership",
+      "category": "studio",
+      "maturity": "Sapling",
+      "status": "development",
+      "availability": "Open to families",
+      "offerKind": "teaching",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://inqshop.castalia.institute/",
+      "offer": {
+        "price": 29,
+        "currency": "USD",
+        "pricingNote": "$29 a month",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "iNQshop / Garage Schooling",
+          "price": 29
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:sapling"
+      ]
+    },
+    {
+      "id": "maybe-something-seasonal",
+      "title": "Maybe Something Seasonal",
+      "description": "A calendar of nature’s cycles and the special moments through the year. Browse it by month, or subscribe to the MSS.ics feed — repeated observances are normalised into proper recurrence rules where the data proves a stable yearly pattern.",
+      "priceDetail": "The calendar and its ICS feed are free to use",
+      "category": "studio",
+      "maturity": "In bloom",
+      "status": "development",
+      "availability": "Live, with an ICS feed",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://castaliainstitute.github.io/MaybeSomethingSeasonal/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Maybe Something Seasonal",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:in-bloom",
+        "free"
+      ]
+    },
+    {
+      "id": "counterpoint",
+      "title": "Counterpoint",
+      "description": "A compositional research project dedicated to new, original music through disciplined, historically grounded counterpoint practice.",
+      "priceDetail": "Or $79 a year to support the whole output",
+      "category": "studio",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/counterpoint/",
+      "offer": {
+        "price": 12,
+        "currency": "USD",
+        "pricingNote": "$12 a score",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Counterpoint",
+          "price": 12
+        }
+      ],
+      "tags": [
+        "category:studio"
+      ]
+    },
+    {
+      "id": "luminary",
+      "title": "Luminary",
+      "description": "An illuminated coastal shadow box: sky over sea behind a 3D-printed silhouette that stands proud of the display. Location editions are made for particular places — the first is Cliff House, Maine.",
+      "priceDetail": "Location editions to order · members $167",
+      "category": "devices",
+      "maturity": "Sapling",
+      "status": "development",
+      "availability": "Production-candidate STL, in fit testing",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://luminary.castalia.institute/",
+      "offer": {
+        "price": 239,
+        "currency": "USD",
+        "pricingNote": "$239",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Luminary",
+          "price": 239
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:sapling"
+      ]
+    },
+    {
+      "id": "lumen-iphone",
+      "title": "Lumen on iPhone",
+      "description": "A personal, local AI that learns alongside its pupil: private by default, fast enough to feel conversational, battery-aware, and built around memory, retrieval and practice loops.",
+      "priceDetail": "Software for a device you already own · members $41",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "availability": "Developing in public",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "/lumen-iphone/",
+      "offer": {
+        "price": 59,
+        "currency": "USD",
+        "pricingNote": "$59",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Lumen on iPhone",
+          "price": 59
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling"
+      ]
+    },
+    {
+      "id": "persona-reliquary",
+      "title": "Persona Reliquary",
+      "description": "A sculptural vessel for an enduring voice. The Persona Reliquary is a physical embodiment of a digital persona, presented as a classical bust and housed beneath an inverted glass cloche.",
+      "priceDetail": "Members $160",
+      "category": "studio",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": "michelangelo",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/reliquary/",
+      "offer": {
+        "price": 229,
+        "currency": "USD",
+        "pricingNote": "$229",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Persona Reliquary",
+          "price": 229
+        }
+      ],
+      "tags": [
+        "category:studio"
+      ]
+    },
+    {
+      "id": "atma-ambisonic",
+      "title": "Atma Ambisonic",
+      "description": "An immersive spatial audio system that captures and reproduces the full acoustic environment, enabling true three-dimensional soundscapes for virtual and augmented experiences.",
+      "priceDetail": "Beta $79 · members $384",
+      "category": "devices",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": "helmholtz",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/noeticon/",
+      "offer": {
+        "price": 549,
+        "currency": "USD",
+        "pricingNote": "$549",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Atma Ambisonic",
+          "price": 549
+        }
+      ],
+      "tags": [
+        "category:devices"
+      ]
+    },
+    {
+      "id": "mcp-tools",
+      "title": "Development MCP Tools",
+      "description": "A collection of Model Context Protocol tools for developers, enabling seamless integration between AI assistants and development workflows.",
+      "priceDetail": "Open source · back the work if it earns its keep",
+      "category": "tools",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://github.com/CastaliaInstitute/atelier",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Development MCP Tools",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:tools",
+        "free"
+      ]
+    },
+    {
+      "id": "noeticon",
+      "title": "Noeticon",
+      "description": "A ritual instrument for developmental readiness and learning attunement: a study of how thinking actually works, and what happens when you give it good instruments.",
+      "priceDetail": "Free",
+      "category": "devices",
+      "maturity": "Seedling",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://castaliainstitute.github.io/atelier/noeticon/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "Noeticon",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:devices",
+        "orchard:seedling",
+        "free"
+      ]
+    },
+    {
+      "id": "inq",
+      "title": "iNQ — Classics in Inquiry",
+      "description": "A continuous shelf of Homer, Virgil, Dante, Milton and Joyce: the old books treated as questions worth arguing with rather than monuments to admire.",
+      "priceDetail": "Free",
+      "category": "studio",
+      "maturity": "In bloom",
+      "status": "development",
+      "checkoutProductId": null,
+      "facultySponsor": null,
+      "pageUrl": "https://inq.castalia.institute/",
+      "offer": {
+        "price": 0,
+        "currency": "USD",
+        "pricingNote": "Free",
+        "notForSale": false
+      },
+      "variants": [
+        {
+          "title": "iNQ — Classics in Inquiry",
+          "price": 0
+        }
+      ],
+      "tags": [
+        "category:studio",
+        "orchard:in-bloom",
+        "free"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "handle": "devices",
+      "title": "Devices",
+      "rule": "category:devices",
+      "description": "Hardware instruments from the Atelier bench: round instruments, rebuilt phones, and contraptions for when the grid goes down.",
+      "members": [
+        "ark",
+        "astrolabe",
+        "xdj",
+        "halo",
+        "lunasay",
+        "fortunai",
+        "maria",
+        "mynah",
+        "hitchhikers-guide",
+        "mynah-vision",
+        "atlas",
+        "astrolabe-firmware",
+        "luminary",
+        "lumen-iphone",
+        "atma-ambisonic",
+        "noeticon"
+      ]
+    },
+    {
+      "handle": "tools",
+      "title": "Tools",
+      "rule": "category:tools",
+      "description": "Open tools that earn their keep: the playgrounds and connectors behind the work.",
+      "members": [
+        "openscad-playground",
+        "fengshui",
+        "mcp-tools"
+      ]
+    },
+    {
+      "handle": "studio",
+      "title": "Studio",
+      "rule": "category:studio",
+      "description": "The published side of the Atelier: books, scores, plans and teaching.",
+      "members": [
+        "encyclopaedia",
+        "encyclopaedia-kids",
+        "garage",
+        "garage-schooling",
+        "maybe-something-seasonal",
+        "counterpoint",
+        "persona-reliquary",
+        "inq"
+      ]
+    },
+    {
+      "handle": "available-now",
+      "title": "Available now",
+      "rule": "tag:available-now",
+      "description": "Hardware you can order today.",
+      "members": [
+        "astrolabe",
+        "mynah"
+      ]
+    },
+    {
+      "handle": "free-open",
+      "title": "Free & open",
+      "rule": "tag:free",
+      "description": "Everything the Atelier gives away: free instruments, feeds and firmware.",
+      "members": [
+        "astrolabe-firmware",
+        "openscad-playground",
+        "maybe-something-seasonal",
+        "mcp-tools",
+        "noeticon",
+        "inq"
+      ]
+    }
+  ]
+}

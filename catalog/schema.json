@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Castalia Shop catalog seed",
+  "type": "object",
+  "required": ["version", "generatedFrom", "products", "collections"],
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "generatedFrom": { "type": "string", "minLength": 1 },
+    "products": {
+      "type": "array",
+      "minItems": 27,
+      "maxItems": 27,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "description",
+          "priceDetail",
+          "category",
+          "pageUrl",
+          "offer",
+          "variants",
+          "tags"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "priceDetail": { "type": "string" },
+          "category": { "enum": ["devices", "tools", "studio"] },
+          "maturity": { "enum": ["Seedling", "Sapling", "In bloom", "Grove"] },
+          "status": { "type": "string" },
+          "availability": { "type": "string" },
+          "offerKind": { "enum": ["hardware", "print", "teaching", "work"] },
+          "checkoutProductId": { "type": ["string", "null"] },
+          "facultySponsor": { "type": ["string", "null"] },
+          "pageUrl": { "type": ["string", "null"] },
+          "offer": {
+            "type": "object",
+            "required": ["price", "currency", "pricingNote"],
+            "properties": {
+              "price": { "type": "number", "minimum": 0 },
+              "currency": { "const": "USD" },
+              "pricingNote": { "type": "string" },
+              "notForSale": { "type": "boolean" }
+            }
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["title", "price"],
+              "properties": {
+                "title": { "type": "string", "minLength": 1 },
+                "price": { "type": "number", "minimum": 0 }
+              }
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9:-]+$" },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "collections": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["handle", "title", "description", "rule", "members"],
+        "properties": {
+          "handle": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "rule": { "enum": ["category:devices", "category:tools", "category:studio", "tag:available-now", "tag:free"] },
+          "members": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
