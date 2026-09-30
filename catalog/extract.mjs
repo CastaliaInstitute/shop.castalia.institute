@@ -91,6 +91,7 @@ const VARIANT_TABLE = {
 const EXTRAS = [
   {
     id: 'noeticon',
+    narration: 'Do you remember being genuinely curious about something, before anyone graded you on it? This is our attempt to study that: how thinking actually works, and what happens when you give it good instruments.',
     title: 'Noeticon',
     description: 'A ritual instrument for developmental readiness and learning attunement: a study of how thinking actually works, and what happens when you give it good instruments.',
     price: 'Free',
@@ -100,6 +101,7 @@ const EXTRAS = [
   },
   {
     id: 'inq',
+    narration: 'Were you ever handed a great book at exactly the wrong moment, and decided you hated it? These are the old ones, Homer and Dante and Joyce, treated as questions worth arguing with rather than monuments you are meant to admire.',
     title: 'iNQ — Classics in Inquiry',
     description: 'A continuous shelf of Homer, Virgil, Dante, Milton and Joyce: the old books treated as questions worth arguing with rather than monuments to admire.',
     price: 'Free',
@@ -160,8 +162,7 @@ function main() {
       id: extractField(text, 'id'),
       title: extractField(text, 'title'),
       description: extractField(text, 'description') || tour.narration[extractField(text, 'id')] || '',
-      priceDetail: extractField(text, 'priceDetail') || '',
-      category: extractField(text, 'category'),
+      priceDetail: extractField(text, 'priceDetail') || '',      category: extractField(text, 'category'),
       maturity: extractField(text, 'maturity'),
       status: extractField(text, 'status'),
       availability: extractField(text, 'availability'),
@@ -197,6 +198,7 @@ function main() {
       id: p.id,
       title: p.title,
       description: p.description,
+      narration: tour.narration[p.id] || null,
       priceDetail: p.priceDetail || priceInfo.pricingNote,
       category: p.category,
       maturity: p.maturity,
@@ -224,6 +226,7 @@ function main() {
       id: extra.id,
       title: extra.title,
       description: extra.description,
+      narration: extra.narration || null,
       priceDetail: priceInfo.pricingNote,
       category: extra.category,
       maturity: extra.maturity,

@@ -1,0 +1,524 @@
+{
+ "sections": {
+  "castalia-hero": {
+   "type": "section",
+   "settings": {
+    "content_direction": "column",
+    "vertical_on_mobile": true,
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "horizontal_alignment_flex_direction_column": "center",
+    "vertical_alignment_flex_direction_column": "center",
+    "gap": 20,
+    "section_width": "page-width",
+    "section_height": "large",
+    "background_media": "none",
+    "background_color": "#0B1020",
+    "border": "none",
+    "border_width": 1,
+    "border_opacity": 100,
+    "border_color": "#B89A5D",
+    "border_radius": 0,
+    "padding-block-start": 64,
+    "padding-block-end": 72
+   },
+   "blocks": {
+    "kicker": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>THE ATELIER \u00b7 CASTALIA INSTITUTE</p>",
+      "width": "fit-content",
+      "max_width": "normal",
+      "alignment": "center",
+      "type_preset": "paragraph",
+      "font": "var(--font-subheading--family)",
+      "font_size": "0.75rem",
+      "line_height": "normal",
+      "letter_spacing": "loose",
+      "case": "uppercase",
+      "wrap": "pretty",
+      "text_color": "#B89A5D",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "lead": {
+     "type": "jumbo-text",
+     "blocks": {},
+     "settings": {
+      "text": "Firm hands, steady mind \u2014 instruments for inquiry.",
+      "font": "heading",
+      "alignment": "center",
+      "line_height": "1",
+      "letter_spacing": "-0.03em",
+      "case": "none",
+      "text_effect": "none",
+      "animation_repeat": false,
+      "text_color": "#F3EBDD"
+     }
+    },
+    "body": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>A round instrument for attention. A book you can type into when the network is gone. A listening phone that keeps the voice at home. The Orphanage bench builds what parents can hand to a child and what researchers can hold when the internet cannot be trusted.</p>",
+      "width": "fit-content",
+      "max_width": "narrow",
+      "alignment": "center",
+      "type_preset": "paragraph",
+      "font": "var(--font-body--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "balance",
+      "text_color": "#D6CCBC",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "cta": {
+     "type": "button",
+     "blocks": {},
+     "settings": {
+      "label": "Browse the work",
+      "link": "shopify://collections/all",
+      "open_in_new_tab": false,
+      "style_class": "button-custom",
+      "custom_button_background": "rgba(11,16,32,0)",
+      "custom_button_text": "#F3EBDD",
+      "custom_button_border": "#B89A5D",
+      "width": "fit-content",
+      "custom_width": 100,
+      "alignment": "center"
+     }
+    },
+    "note": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>Beta hardware is in the hands of a small circle now. Everything else is developing in public.</p>",
+      "width": "fit-content",
+      "max_width": "normal",
+      "alignment": "center",
+      "type_preset": "paragraph",
+      "font": "var(--font-subheading--family)",
+      "font_size": "0.875rem",
+      "line_height": "loose",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": "#B89A5DCC",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    }
+   },
+   "block_order": [
+    "kicker",
+    "lead",
+    "body",
+    "cta",
+    "note"
+   ]
+  },
+  "castalia-marquee": {
+   "type": "marquee",
+   "settings": {
+    "movement_direction": "normal",
+    "background_color": "#B89A5D",
+    "padding-block-start": 10,
+    "padding-block-end": 10,
+    "gap_between_elements": 40
+   },
+   "blocks": {
+    "l1": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>There is more than one way to read a river.</p>",
+      "width": "fit-content",
+      "max_width": "none",
+      "alignment": "left",
+      "type_preset": "paragraph",
+      "font": "var(--font-subheading--family)",
+      "font_size": "0.875rem",
+      "line_height": "normal",
+      "letter_spacing": "loose",
+      "case": "uppercase",
+      "wrap": "nowrap",
+      "text_color": "#0B1020",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    }
+   }
+  },
+  "castalia-work": {
+   "type": "collection-list",
+   "settings": {
+    "collection_list": [
+     "devices",
+     "tools",
+     "studio"
+    ],
+    "layout_type": "grid",
+    "carousel_on_mobile": false,
+    "columns": 3,
+    "mobile_columns": "1",
+    "mobile_card_size": "44cqw",
+    "columns_gap": 8,
+    "bento_gap": 8,
+    "rows_gap": 8,
+    "max_collections": 3,
+    "icons_style": "arrow",
+    "icons_shape": "circle",
+    "section_width": "page-width",
+    "horizontal_alignment": "flex-start",
+    "gap": 16,
+    "background_color": null,
+    "padding-block-start": 48,
+    "padding-block-end": 48
+   },
+   "blocks": {
+    "title": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<h2>The work</h2>",
+      "width": "100%",
+      "max_width": "normal",
+      "alignment": "left",
+      "type_preset": "h3",
+      "font": "var(--font-heading--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "balance",
+      "text_color": null,
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "sub": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>Devices you can hold. Tools you can open in a browser. Works published at cost. The bench, sorted.</p>",
+      "width": "100%",
+      "max_width": "narrow",
+      "alignment": "left",
+      "type_preset": "paragraph",
+      "font": "var(--font-body--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": "#1A1510CC",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    }
+   },
+   "block_order": [
+    "title",
+    "sub"
+   ]
+  },
+  "castalia-available": {
+   "type": "product-list",
+   "settings": {
+    "collection": "available-now",
+    "layout_type": "grid",
+    "carousel_on_mobile": false,
+    "max_products": 8,
+    "columns": 4,
+    "mobile_columns": "2",
+    "mobile_card_size": "60cqw",
+    "columns_gap": 8,
+    "rows_gap": 8,
+    "icons_style": "chevron",
+    "icons_shape": "circle",
+    "section_width": "page-width",
+    "horizontal_alignment": "flex-start",
+    "gap": 16,
+    "background_color": null,
+    "padding-block-start": 32,
+    "padding-block-end": 48
+   },
+   "blocks": {
+    "title": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<h2>Available now</h2>",
+      "width": "100%",
+      "max_width": "normal",
+      "alignment": "left",
+      "type_preset": "h3",
+      "font": "var(--font-heading--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": null,
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "sub": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>Astrolabe and Mynah beta \u2014 hardware you can order today, and the software that runs it.</p>",
+      "width": "100%",
+      "max_width": "none",
+      "alignment": "left",
+      "type_preset": "paragraph",
+      "font": "var(--font-body--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": "#1A1510B3",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    }
+   },
+   "block_order": [
+    "title",
+    "sub"
+   ]
+  },
+  "castalia-about": {
+   "type": "section",
+   "settings": {
+    "content_direction": "column",
+    "vertical_on_mobile": true,
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "horizontal_alignment_flex_direction_column": "center",
+    "vertical_alignment_flex_direction_column": "center",
+    "gap": 16,
+    "section_width": "page-width",
+    "section_height": "small",
+    "background_media": "none",
+    "background_color": null,
+    "border": "solid",
+    "border_width": 1,
+    "border_opacity": 60,
+    "border_color": "#B89A5D",
+    "border_radius": 0,
+    "padding-block-start": 48,
+    "padding-block-end": 48
+   },
+   "blocks": {
+    "lead": {
+     "type": "jumbo-text",
+     "blocks": {},
+     "settings": {
+      "text": "Every instrument began as somebody's stubborn question.",
+      "font": "heading",
+      "alignment": "center",
+      "line_height": "1",
+      "letter_spacing": "-0.03em",
+      "case": "none",
+      "text_effect": "none",
+      "animation_repeat": false,
+      "text_color": "#1A1510"
+     }
+    },
+    "body": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p><em>Some of this we sell; some we publish; all of it we learn in public. The orchard stages tell you where each one stands \u2014 Seedling still in the sand, Sapling branching out, fruit already in hand. What can be held, we sell. What is still becoming, we tend.</em></p><p>Questions are instruments of their own. The Orphanage is where the research and the bench meet the curious.</p>",
+      "width": "fit-content",
+      "max_width": "none",
+      "alignment": "center",
+      "type_preset": "paragraph",
+      "font": "var(--font-body--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "balance",
+      "text_color": "#1A1510D9",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "cta": {
+     "type": "button",
+     "blocks": {},
+     "settings": {
+      "label": "Take the guided tour",
+      "link": "shopify://collections",
+      "open_in_new_tab": false,
+      "style_class": "button-secondary",
+      "custom_button_background": null,
+      "custom_button_text": null,
+      "custom_button_border": null,
+      "width": "fit-content",
+      "custom_width": 100,
+      "alignment": "center"
+     }
+    }
+   },
+   "block_order": [
+    "lead",
+    "body",
+    "cta"
+   ]
+  },
+  "castalia-letter": {
+   "type": "section",
+   "settings": {
+    "content_direction": "column",
+    "vertical_on_mobile": true,
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "horizontal_alignment_flex_direction_column": "center",
+    "vertical_alignment_flex_direction_column": "center",
+    "gap": 16,
+    "section_width": "page-width",
+    "section_height": "small",
+    "background_media": "none",
+    "background_color": "#0B1020",
+    "border": "none",
+    "padding-block-start": 48,
+    "padding-block-end": 56
+   },
+   "blocks": {
+    "head": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<h2>Leave word by the spring</h2>",
+      "width": "100%",
+      "max_width": "normal",
+      "alignment": "center",
+      "type_preset": "h3",
+      "font": "var(--font-heading--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": "#F3EBDD",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "sub": {
+     "type": "text",
+     "blocks": {},
+     "settings": {
+      "text": "<p>We write when a new instrument blooms, or a beta circle opens. No feeds, no noise.</p>",
+      "width": "100%",
+      "max_width": "none",
+      "alignment": "center",
+      "type_preset": "paragraph",
+      "font": "var(--font-subheading--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
+      "case": "none",
+      "wrap": "pretty",
+      "text_color": "#D6CCBC",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
+     }
+    },
+    "signup": {
+     "type": "email-signup",
+     "blocks": {},
+     "settings": {
+      "width": "fill",
+      "custom_width": 100,
+      "label": "Leave word",
+      "font_size": "1rem",
+      "font_family": "var(--font-body--family)",
+      "button_label": "By the spring  \u2192",
+      "button_background": "#B89A5D",
+      "button_text": "#0B1020"
+     }
+    }
+   },
+   "block_order": [
+    "head",
+    "sub",
+    "signup"
+   ]
+  }
+ },
+ "order": [
+  "castalia-hero",
+  "castalia-marquee",
+  "castalia-work",
+  "castalia-available",
+  "castalia-about",
+  "castalia-letter"
+ ]
+}

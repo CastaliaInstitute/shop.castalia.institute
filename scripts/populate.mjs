@@ -87,7 +87,11 @@ function assertNoUserErrors(result, what) {
 // ---- description assembly (R2.2) -------------------------------------------
 
 function buildDescriptionHtml(p) {
-  const parts = [p.description];
+  // narration first (the workshop's spoken line, answered in the second person
+  // as the bench does), then the catalog description, then pricing, then link.
+  const parts = [];
+  if (p.narration) parts.push(`<p><em>${p.narration}</em></p>`);
+  parts.push(p.description);
   const note = p.offer.pricingNote && p.offer.pricingNote !== p.title ? p.offer.pricingNote : null;
   if (p.priceDetail && p.priceDetail.trim()) {
     parts.push(`<p><strong>Atelier pricing:</strong> ${escapeHtml(p.priceDetail)}</p>`);
