@@ -134,9 +134,10 @@ function buildTags(p, priceInfo) {
 // Atelier entries lacking pageUrl but with a known public location.
 const PAGE_URL_FALLBACKS = {
   'persona-reliquary': 'https://castaliainstitute.github.io/atelier/reliquary/',
-  'atma-ambisonic': 'https://castaliainstitute.github.io/atelier/noeticon/',
+  'atma-ambisonic': 'https://castaliainstitute.github.io/atelier/atma-ambisonic/',
   'mcp-tools': 'https://github.com/CastaliaInstitute/atelier',
 };
+const SITE_BASE = 'https://castaliainstitute.github.io/atelier';
 
 function main() {
   const appJs = readFileSync(resolve(atelierDir, 'app.js'), 'utf8');
@@ -182,6 +183,8 @@ function main() {
       const h = hotspotById.get(p.id);
       p.pageUrl = PAGE_URL_FALLBACKS[p.id] || (h && h.href && /^https?:/.test(h.href) ? h.href : null);
       if (!p.pageUrl) throw new Error(`No pageUrl for ${p.id} and no fallback`);
+    } else if (p.pageUrl.startsWith('/')) {
+      p.pageUrl = SITE_BASE + p.pageUrl;
     }
 
     const priceRaw = extractField(text, 'price') || 'Not for sale';

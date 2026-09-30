@@ -111,7 +111,7 @@ async function readProducts() {
     products(first: 250) {
       edges {
         node {
-          id handle title status tags vendor
+          id handle title status tags vendor descriptionHtml
           variants(first: 50) { edges { node { id title price } } }
         }
       }
@@ -179,13 +179,17 @@ async function ensureProduct(p, existing) {
     cur.variants.edges.map((e) => ({ t: e.node.title, pr: Number(e.node.price) }))
       .every((v, i) => {
         const w = p.variants[i];
-        return w && w.price === v.pr;
+        return w && w.price === v.pr && (p.variants.length === 1 || w.title === v.t);
       }) &&
     cur.variants.edges.length === p.variants.length;
   const sameMeta = cur &&
     cur.title === p.title &&
     cur.status === 'ACTIVE' &&
-    JSON.stringify([...cur.tags].sort()) === JSON.stringify([...p.tags].sort());
+    JSON.stringify([...cur.tags].sort()) === JSON.stringify([...p.tags].sort()) &&
+    // body: compare just the generated pricing/link paragraphs so Shopify's
+    // normalisation of the prose can't cause perpetual updates
+    (cur.descriptionHtml || '').includes(escapeHtml(p.priceDetail || p.offer.pricingNote || '')) &&
+    (!p.pageUrl || (cur.descriptionHtml || '').includes(p.pageUrl));
 
   if (cur && sameMeta && sameVariants && !force) {
     return `skip (${p.title} — exact match)`;
@@ -204,6 +208,7 @@ async function ensureProduct(p, existing) {
   );
   assertNoUserErrors(data.productSet, `productSet ${p.id}`);
   writes++;
+  state.products[p.id] = { gqlId: data.productSet.product.id, updatedAt: new Date().toISOString() };
   return `${action}d ${p.title} → ${data.productSet.product.id}`;
 }
 
@@ -226,6 +231,7 @@ async function ensureCollection(c, existing, productIdsByHandle) {
     assertNoUserErrors(data.collectionCreate, `collectionCreate ${c.handle}`);
     id = data.collectionCreate.collection.id;
     writes++;
+    state.collections[c.handle] = { gqlId: id, updatedAt: new Date().toISOString() };
   }
   if (missingHandles.length) {
     const ids = missingHandles.map((h) => productIdsByHandle.get(h)).filter(Boolean);

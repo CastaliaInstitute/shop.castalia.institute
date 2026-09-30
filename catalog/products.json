@@ -89,7 +89,7 @@
       "availability": "Research — the RX2 integration is unsolved",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/#project-xdj",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/#project-xdj",
       "offer": {
         "price": 0,
         "currency": "USD",
@@ -274,7 +274,7 @@
       "availability": "Developing in public",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/hitchhikers-guide/",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/hitchhikers-guide/",
       "offer": {
         "price": 349,
         "currency": "USD",
@@ -303,7 +303,7 @@
       "availability": "Developing in public",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/#project-mynah-vision",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/#project-mynah-vision",
       "offer": {
         "price": 119,
         "currency": "USD",
@@ -388,7 +388,7 @@
       "status": "development",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/openscad/",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/openscad/",
       "offer": {
         "price": 0,
         "currency": "USD",
@@ -591,7 +591,7 @@
       "status": "development",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/counterpoint/",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/counterpoint/",
       "offer": {
         "price": 12,
         "currency": "USD",
@@ -648,7 +648,7 @@
       "availability": "Developing in public",
       "checkoutProductId": null,
       "facultySponsor": null,
-      "pageUrl": "/lumen-iphone/",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/lumen-iphone/",
       "offer": {
         "price": 59,
         "currency": "USD",
@@ -701,7 +701,7 @@
       "status": "development",
       "checkoutProductId": null,
       "facultySponsor": "helmholtz",
-      "pageUrl": "https://castaliainstitute.github.io/atelier/noeticon/",
+      "pageUrl": "https://castaliainstitute.github.io/atelier/atma-ambisonic/",
       "offer": {
         "price": 549,
         "currency": "USD",
