@@ -9,3 +9,6 @@ node_modules/
 node_modules/.cache/
 # Secrets
 .env
+
+# population state
+state/
