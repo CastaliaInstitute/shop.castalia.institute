@@ -34,7 +34,7 @@ async function gql(query, variables) {
 
 for (const p of seed.products) {
   if (only && !only.includes(p.id)) continue;
-  const png = `/tmp/arts/${p.id}.png`;
+  const png = resolve(root, 'theme/art', `${p.id}.png`);
   if (!existsSync(png)) { console.log(`skip ${p.id} (no render)`); continue; }
   const st = state.products[p.id];
   if (!st?.gqlId) { console.log(`skip ${p.id} (no gql id)`); continue; }

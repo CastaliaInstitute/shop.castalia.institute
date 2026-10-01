@@ -1,0 +1,20 @@
+.header-logo {
+  display: flex !important;
+  align-items: center;
+  gap: .55rem;
+}
+
+.header-logo::before {
+  content: "";
+  display: block;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  background: url("castalia-mark.svg") center / contain no-repeat;
+}
+
+.header-logo span[data-testid="header-logo"] {
+  font-family: var(--font-heading--family);
+  font-weight: 600;
+  letter-spacing: .01em;
+}

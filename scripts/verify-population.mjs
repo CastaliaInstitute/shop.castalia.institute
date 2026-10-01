@@ -42,6 +42,7 @@ async function adminGql(query) {
     method: 'POST',
     headers: { 'X-Shopify-Access-Token': token, 'Content-Type': 'application/json' },
     body: JSON.stringify({ query }),
+    signal: AbortSignal.timeout(20000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const body = await res.json();
@@ -109,18 +110,23 @@ function compareCollections(storeCollections, seedCollections, storeProducts) {
 // ---- group 3: storefront REST ------------------------------------------------
 
 async function storefrontCount() {
-  const res = await fetch(`https://${host}/products.json?limit=250`);
-  if (!res.ok) {
-    const e = new Error(`products.json HTTP ${res.status}`);
-    e.status = res.status;
-    throw e;
+  let lastError;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const res = await fetch(`https://${host}/products.json?limit=250`, { signal: AbortSignal.timeout(10000) });
+    if (res.ok) {
+      const body = await res.json();
+      return body.products || [];
+    }
+    lastError = new Error(`products.json HTTP ${res.status}`);
+    lastError.status = res.status;
+    if (res.status !== 429 || attempt === 2) throw lastError;
+    const retryAfter = Number(res.headers.get('Retry-After'));
+    await new Promise((r) => setTimeout(r, Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : (attempt + 1) * 2000));
   }
-  const body = await res.json();
-  return body.products || [];
 }
 
 async function liveProduct(id) {
-  const res = await fetch(`https://${host}/products/${id}.json`);
+  const res = await fetch(`https://${host}/products/${id}.json`, { signal: AbortSignal.timeout(10000) });
   if (!res.ok) return { status: res.status, product: null };
   return { status: 200, product: (await res.json()).product };
 }
@@ -184,13 +190,15 @@ async function main() {
   // as an explicit skip rather than a failure.
   let visible = -1;
   let gated = false;
+  let storefrontSkipReason = '';
   try {
     const storeProducts = await storefrontCount();
     visible = storeProducts.length;
     if (visible < 27) check('storefront', false, `only ${visible} products visible via products.json (want >= 27)`);
   } catch (e) {
-    if (e.status === 401) {
+    if (e.status === 401 || e.status === 429) {
       gated = true;
+      storefrontSkipReason = e.status === 401 ? 'storefront password required' : 'storefront endpoint rate-limited (429)';
     } else {
       check('storefront', false, `products.json unreachable: ${e.message}`);
     }
@@ -201,7 +209,12 @@ async function main() {
   const spotLogs = [];
   for (const id of spotIds) {
     const { status, product } = await liveProduct(id);
-    if (status === 401) { gated = true; spotLogs.push(`${id}: gated`); continue; }
+    if (status === 401 || status === 429) {
+      gated = true;
+      storefrontSkipReason ||= status === 401 ? 'storefront password required' : 'storefront endpoint rate-limited (429)';
+      spotLogs.push(`${id}: skipped (${status})`);
+      continue;
+    }
     const p = seed.products.find((x) => x.id === id);
     if (status !== 200) { check('live', false, `${id}.json HTTP ${status}`); spotLogs.push(`${id}: HTTP ${status}`); continue; }
     if (!product) { check('live', false, `${id}.json: no product in body`); spotLogs.push(`${id}: empty`); continue; }
@@ -222,7 +235,7 @@ async function main() {
   const okLive = failures.filter((f) => f.startsWith('live:')).length === 0;
   console.log(`  products:    ${okProducts ? `27/27 match seed` : 'MISMATCH'}`);
   console.log(`  collections: ${okCollections ? '5/5 match seed' : 'MISMATCH'}`);
-  console.log(`  storefront:  ${gated ? 'SKIPPED — password gate on (disable in admin: Online Store → Preferences)' : `${visible >= 0 ? `${visible} visible` : 'unreachable'} ${okStorefront ? 'ok' : 'FAIL'}`}`);
+  console.log(`  storefront:  ${gated ? `SKIPPED — ${storefrontSkipReason}` : `${visible >= 0 ? `${visible} visible` : 'unreachable'} ${okStorefront ? 'ok' : 'FAIL'}`}`);
   if (!quiet) console.log(`  live spot:   ${spotLogs.join(' | ')}`);
 
   if (failures.length) {
@@ -231,7 +244,9 @@ async function main() {
     if (failures.length > 10) console.error(`   …and ${failures.length - 10} more`);
     process.exit(1);
   }
-  console.log('\nAll checks pass.');
+  console.log(gated
+    ? '\nAdmin catalog checks pass; storefront checks were skipped.'
+    : '\nAll checks pass.');
 }
 
 main().catch(async (e) => { console.error(e); process.exit(1); });

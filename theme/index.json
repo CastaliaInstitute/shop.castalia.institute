@@ -67,7 +67,7 @@
      "type": "text",
      "blocks": {},
      "settings": {
-      "text": "<p>A round instrument for attention. A book you can type into when the network is gone. A listening phone that keeps the voice at home. The Orphanage bench builds what parents can hand to a child and what researchers can hold when the internet cannot be trusted.</p>",
+      "text": "<p>A round instrument for attention. A book you can type into when the network is gone. A listening phone that keeps the voice at home. The Atelier bench builds what parents can hand to a child and what researchers can hold when the internet cannot be trusted.</p>",
       "width": "fit-content",
       "max_width": "narrow",
       "alignment": "center",
@@ -175,167 +175,6 @@
     }
    }
   },
-  "castalia-work": {
-   "type": "collection-list",
-   "settings": {
-    "collection_list": [
-     "devices",
-     "tools",
-     "studio"
-    ],
-    "layout_type": "grid",
-    "carousel_on_mobile": false,
-    "columns": 3,
-    "mobile_columns": "1",
-    "mobile_card_size": "44cqw",
-    "columns_gap": 8,
-    "bento_gap": 8,
-    "rows_gap": 8,
-    "max_collections": 3,
-    "icons_style": "arrow",
-    "icons_shape": "circle",
-    "section_width": "page-width",
-    "horizontal_alignment": "flex-start",
-    "gap": 16,
-    "background_color": null,
-    "padding-block-start": 48,
-    "padding-block-end": 48
-   },
-   "blocks": {
-    "title": {
-     "type": "text",
-     "blocks": {},
-     "settings": {
-      "text": "<h2>The work</h2>",
-      "width": "100%",
-      "max_width": "normal",
-      "alignment": "left",
-      "type_preset": "h3",
-      "font": "var(--font-heading--family)",
-      "font_size": "",
-      "line_height": "normal",
-      "letter_spacing": "normal",
-      "case": "none",
-      "wrap": "balance",
-      "text_color": null,
-      "background": false,
-      "background_color": "#00000026",
-      "corner_radius": 0,
-      "padding-block-start": 0,
-      "padding-block-end": 0,
-      "padding-inline-start": 0,
-      "padding-inline-end": 0
-     }
-    },
-    "sub": {
-     "type": "text",
-     "blocks": {},
-     "settings": {
-      "text": "<p>Devices you can hold. Tools you can open in a browser. Works published at cost. The bench, sorted.</p>",
-      "width": "100%",
-      "max_width": "narrow",
-      "alignment": "left",
-      "type_preset": "paragraph",
-      "font": "var(--font-body--family)",
-      "font_size": "",
-      "line_height": "normal",
-      "letter_spacing": "normal",
-      "case": "none",
-      "wrap": "pretty",
-      "text_color": "#1A1510CC",
-      "background": false,
-      "background_color": "#00000026",
-      "corner_radius": 0,
-      "padding-block-start": 0,
-      "padding-block-end": 0,
-      "padding-inline-start": 0,
-      "padding-inline-end": 0
-     }
-    }
-   },
-   "block_order": [
-    "title",
-    "sub"
-   ]
-  },
-  "castalia-available": {
-   "type": "product-list",
-   "settings": {
-    "collection": "available-now",
-    "layout_type": "grid",
-    "carousel_on_mobile": false,
-    "max_products": 8,
-    "columns": 4,
-    "mobile_columns": "2",
-    "mobile_card_size": "60cqw",
-    "columns_gap": 8,
-    "rows_gap": 8,
-    "icons_style": "chevron",
-    "icons_shape": "circle",
-    "section_width": "page-width",
-    "horizontal_alignment": "flex-start",
-    "gap": 16,
-    "background_color": null,
-    "padding-block-start": 32,
-    "padding-block-end": 48
-   },
-   "blocks": {
-    "title": {
-     "type": "text",
-     "blocks": {},
-     "settings": {
-      "text": "<h2>Available now</h2>",
-      "width": "100%",
-      "max_width": "normal",
-      "alignment": "left",
-      "type_preset": "h3",
-      "font": "var(--font-heading--family)",
-      "font_size": "",
-      "line_height": "normal",
-      "letter_spacing": "normal",
-      "case": "none",
-      "wrap": "pretty",
-      "text_color": null,
-      "background": false,
-      "background_color": "#00000026",
-      "corner_radius": 0,
-      "padding-block-start": 0,
-      "padding-block-end": 0,
-      "padding-inline-start": 0,
-      "padding-inline-end": 0
-     }
-    },
-    "sub": {
-     "type": "text",
-     "blocks": {},
-     "settings": {
-      "text": "<p>Astrolabe and Mynah beta \u2014 hardware you can order today, and the software that runs it.</p>",
-      "width": "100%",
-      "max_width": "none",
-      "alignment": "left",
-      "type_preset": "paragraph",
-      "font": "var(--font-body--family)",
-      "font_size": "",
-      "line_height": "normal",
-      "letter_spacing": "normal",
-      "case": "none",
-      "wrap": "pretty",
-      "text_color": "#1A1510B3",
-      "background": false,
-      "background_color": "#00000026",
-      "corner_radius": 0,
-      "padding-block-start": 0,
-      "padding-block-end": 0,
-      "padding-inline-start": 0,
-      "padding-inline-end": 0
-     }
-    }
-   },
-   "block_order": [
-    "title",
-    "sub"
-   ]
-  },
   "castalia-about": {
    "type": "section",
    "settings": {
@@ -360,25 +199,35 @@
    },
    "blocks": {
     "lead": {
-     "type": "jumbo-text",
+     "type": "text",
      "blocks": {},
      "settings": {
-      "text": "Every instrument began as somebody's stubborn question.",
-      "font": "heading",
+      "text": "<h2>Every instrument began as somebody\u2019s stubborn question.</h2>",
+      "width": "100%",
+      "max_width": "normal",
       "alignment": "center",
-      "line_height": "1",
-      "letter_spacing": "-0.03em",
+      "type_preset": "h2",
+      "font": "var(--font-heading--family)",
+      "font_size": "",
+      "line_height": "normal",
+      "letter_spacing": "normal",
       "case": "none",
-      "text_effect": "none",
-      "animation_repeat": false,
-      "text_color": "#1A1510"
+      "wrap": "balance",
+      "text_color": "#1A1510",
+      "background": false,
+      "background_color": "#00000026",
+      "corner_radius": 0,
+      "padding-block-start": 0,
+      "padding-block-end": 0,
+      "padding-inline-start": 0,
+      "padding-inline-end": 0
      }
     },
     "body": {
      "type": "text",
      "blocks": {},
      "settings": {
-      "text": "<p><em>Some of this we sell; some we publish; all of it we learn in public. The orchard stages tell you where each one stands \u2014 Seedling still in the sand, Sapling branching out, fruit already in hand. What can be held, we sell. What is still becoming, we tend.</em></p><p>Questions are instruments of their own. The Orphanage is where the research and the bench meet the curious.</p>",
+      "text": "<p><em>Some of this we sell; some we publish; all of it we learn in public. The orchard stages tell you where each one stands \u2014 Seedling still in the sand, Sapling branching out, fruit already in hand. What can be held, we sell. What is still becoming, we tend.</em></p><p>Questions are instruments of their own. The Atelier is where the research and the bench meet the curious.</p>",
       "width": "fit-content",
       "max_width": "none",
       "alignment": "center",
@@ -403,8 +252,8 @@
      "type": "button",
      "blocks": {},
      "settings": {
-      "label": "Take the guided tour",
-      "link": "shopify://collections",
+      "label": "Browse all 27 products",
+      "link": "shopify://collections/all",
       "open_in_new_tab": false,
       "style_class": "button-secondary",
       "custom_button_background": null,
@@ -511,13 +360,22 @@
     "sub",
     "signup"
    ]
+  },
+  "castalia-catalog": {
+   "type": "custom-liquid",
+   "settings": {
+    "custom_liquid": "<section class=\"castalia-catalog\" aria-labelledby=\"castalia-catalog-title\">\n  <div class=\"castalia-catalog__intro\">\n    <p class=\"castalia-catalog__eyebrow\">THE ATELIER \u00b7 CASTALIA INSTITUTE</p>\n    <h2 id=\"castalia-catalog-title\">On the bench</h2>\n    <p>Instruments, books and tools from a workshop still becoming itself.</p>\n  </div>\n  {% assign castalia_handles = 'astrolabe,ark,mynah,encyclopaedia,inq,lunasay,halo,luminary' | split: ',' %}\n  <div class=\"castalia-catalog__grid\">\n    {% for handle in castalia_handles %}\n      {% assign castalia_product = all_products[handle] %}\n      {% if castalia_product != blank %}\n        <article class=\"castalia-card\">\n          <a class=\"castalia-card__link\" href=\"{{ castalia_product.url }}\" aria-label=\"{{ castalia_product.title | escape }}\">\n            <div class=\"castalia-card__image\">\n              {% if castalia_product.featured_image %}\n                {{ castalia_product.featured_image | image_url: width: 900 | image_tag: alt: castalia_product.title, loading: 'lazy' }}\n              {% endif %}\n            </div>\n            <div class=\"castalia-card__meta\">\n              <h3>{{ castalia_product.title | escape }}</h3>\n              <span>\n                {% case handle %}\n                  {% when 'astrolabe' %}Beta $49 \u00b7 instrument $219\n                  {% when 'mynah' %}Device $449 \u00b7 software $59\n                  {% else %}{% if castalia_product.price_varies %}From {% endif %}{{ castalia_product.price_min | money }}\n                {% endcase %}\n              </span>\n            </div>\n            <p class=\"castalia-card__action\">Open the work <span aria-hidden=\"true\">\u2197</span></p>\n          </a>\n        </article>\n      {% endif %}\n    {% endfor %}\n  </div>\n  <div class=\"castalia-catalog__more\"><a href=\"/collections/all\">Browse all 27 products <span aria-hidden=\"true\">\u2192</span></a></div>\n</section>\n<style>\n.castalia-catalog{max-width:1440px;margin:0 auto;padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,4rem);color:#1A1510}\n.castalia-catalog__intro{max-width:46rem;margin:0 auto 2.5rem;text-align:center}\n.castalia-catalog__eyebrow{margin:0 0 .75rem;color:#8E7138;font:600 .72rem/1.4 var(--font-body--family);letter-spacing:.16em;text-transform:uppercase}\n.castalia-catalog__intro h2{margin:0;font:600 clamp(2.25rem,4vw,3.5rem)/1 var(--font-heading--family);letter-spacing:-.025em}\n.castalia-catalog__intro>p:last-child{margin:.9rem 0 0;color:#534a3d;line-height:1.6}\n.castalia-catalog__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}\n.castalia-card{min-width:0;background:#F8F3EA;border:1px solid #D6CCBC;transition:transform .2s ease,border-color .2s ease}\n.castalia-card:hover{transform:translateY(-3px);border-color:#B89A5D}\n.castalia-card__link{display:block;color:inherit;text-decoration:none}\n.castalia-card__image{aspect-ratio:1/1;background:#F3EBDD;padding:1rem;display:grid;place-items:center;overflow:hidden}\n.castalia-card__image img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}\n.castalia-card__meta{padding:1rem 1rem .25rem;display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}\n.castalia-card__meta h3{margin:0;font:600 clamp(1rem,2vw,1.35rem)/1.15 var(--font-heading--family)}\n.castalia-card__meta span{flex:0 0 auto;color:#65593f;font-size:.82rem;font-variant-numeric:tabular-nums}\n.castalia-card__action{margin:0;padding:0 1rem 1rem;color:#8E7138;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase}\n.castalia-catalog__more{text-align:center;margin-top:2.5rem}\n.castalia-catalog__more a{display:inline-flex;gap:.6rem;align-items:center;padding:.85rem 1.25rem;border:1px solid #B89A5D;color:#1A1510;text-decoration:none;transition:background .2s ease,color .2s ease}\n.castalia-catalog__more a:hover{background:#0B1020;color:#F3EBDD}\n@media(min-width:750px){.castalia-catalog__grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem}}\n@media(prefers-reduced-motion:reduce){.castalia-card,.castalia-catalog__more a{transition:none}.castalia-card:hover{transform:none}}\n</style>",
+    "background_color": null,
+    "section_width": "full-width",
+    "padding-block-start": 0,
+    "padding-block-end": 0
+   }
   }
  },
  "order": [
   "castalia-hero",
   "castalia-marquee",
-  "castalia-work",
-  "castalia-available",
+  "castalia-catalog",
   "castalia-about",
   "castalia-letter"
  ]
